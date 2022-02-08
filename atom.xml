@@ -1,0 +1,5 @@
+---
+layout: nil
+---
+@using Pretzel.Logic.Templating.Context
+@Include( "atom.csxml", Model, typeof( PageContext ) )
