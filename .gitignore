@@ -1,0 +1,11 @@
+bin/
+obj/
+.vs/
+.nuget/
+*.suo
+packages/
+_site
+.pretzel/
+public/
+_plugins
+tools
