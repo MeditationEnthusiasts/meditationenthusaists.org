@@ -13,7 +13,7 @@ urlnohttp: www.meditationenthusiasts.org/
 contact: seth@meditationenthusiasts.org
 github: https://github.com/MeditationEnthusiasts/meditationenthusaists.org
 githubissues: https://github.com/MeditationEnthusiasts/meditationenthusaists.org/issues
-
+website_version: "6.0.0"
 disqus_shortname: meditationenthusiasts-org
 
 exclude:

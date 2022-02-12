@@ -1,0 +1,201 @@
+@using System
+@using System.Collections.Generic
+@using System.Text
+@using Pretzel.Logic.Templating.Context
+@using Page = Pretzel.Logic.Templating.Context.Page
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    @{
+        StringBuilder tagBuilder = new StringBuilder();
+        foreach( string tag in Model.Page.Tags )
+        {
+            tagBuilder.Append( tag + "," );
+        }
+        if( tagBuilder.Length > 0 )
+        {
+            tagBuilder = tagBuilder.Remove( tagBuilder.Length - 1, 1 );
+            @:<meta name="keywords" content="@tagBuilder.ToString()" />
+        }
+
+        if( Model.Page.Bag.ContainsKey( "description" ) )
+        {
+            @:<meta name="description" content="@(Model.Page.Bag["description"])" />
+        }
+    }
+
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Blog Feed" />
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog Feed" />
+
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/static/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/static/favicons/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/static/favicons/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicons/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/favicons/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16.png">
+    <link rel="apple-touch-icon" href="/static/favicons/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/favicons/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/favicons/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/favicons/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/favicons/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/favicons/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/static/favicons/favicon-144.png">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+
+    <title>@Model.Title</title>
+
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+   
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="/static/css/font-awesome/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/static/css/style.css" id="theme-styles">
+</head>
+<body>
+    <header>
+        <div class="widewrapper masthead">
+            <div class="container">
+                <a href="/" id="logo">
+                    <img src="/static/img/logo.png" alt="Meditation Enthusiasts Logo" />
+                </a>
+
+                <div id="mobile=nav-toggle" class="pull-right">
+                    <a href="#" data-toggle="collapse" data-target=".clean-nav .navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <nav class="pull-right clean-nav">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="/blog.html">Posts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="widewrapper subheader">
+            <div class="container">
+                <div class="clean-breadcrumb">
+                    <a href="#">Blog</a>
+                </div>
+                <div class="clean-searchbox">
+                    <iframe
+                        src="https://duckduckgo.com/search.html?site=@(Model.Site.Config["urlnohttp"])&amp;prefill=Search%20Site%20via%20DuckDuckGo"
+                        class="ddg-search"
+                        style="overflow:hidden;padding:0;height:40px;"
+                        frameborder="0">
+                    </iframe>
+                    <noscript>
+                        Search will not work without JavaScript, you will instead search all of DuckDuckGo.
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="widewrapper main">
+        <div class="container">
+            @Raw( Model.Content )
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="widewrapper footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 footer-widget" style="font-size:xx-large;margin-bottom:0px;">
+                        <a href="https://www.facebook.com/pages/meditation-enthusiasts/143258385684557" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/xmeditator" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://www.youtube.com/user/xmeditator" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-youtube-square"></i></a>
+                        <a href="https://meditationenthusiasts.tumblr.com/" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-tumblr-square"></i></a>
+                        <a href="https://github.com/MeditationEnthusiasts/" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-github-square"></i></a>
+                    </div>
+                    <div class="col-md-4 footer-widget" style="margin-bottom:0px;">
+                        <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer nofollow">
+                            <img title="All posts on Meditation Enthusiasts are licensed CC BY-SA 4.0" alt="Creative Commons License CC BY-SA 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4 footer-widget" style="margin-bottom:0px;">
+                        <strong>Website Version: </strong>@Model.Site.Config["website_version"]
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 footer-widget">
+                        <ul>
+                            <li>
+                                <a href="/privacy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="/disclaimer.html">Disclaimer</a>
+                            </li>
+                            <li>
+                                <a href="/credits.html">Credits</a>
+                            </li>
+                            <li>
+                                <a href="/rss.xml">RSS Feed</a>
+                            </li>
+                            <li>
+                                <a href="/atom.xml">ATOM Feed</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 footer-widget">
+                        Please consult a doctor or mental health professional before starting a meditation practice.
+                    </div>
+                    <div class="col-md-4 footer-widget">
+                        <strong>Visit us on Meditation Enthusiasts Sites!</strong>
+                        <a href="https://sites.meditationenthusiasts.org/profile/meditationenthusiasts/" target="_blank" rel="noopener noreferrer nofollow">
+                            <img src="/static/img/siteslogo.png"
+                                width="200"
+                                height="81"
+                                alt="Go to profile on Meditation Enthusiats Sites"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="widewrapper">
+                <span>Website design by <a href="https://binarytheme.com/bloggo-clean-personal-blog-html5-template-2/" target="_blank" rel="noopener noreferrer nofollow">Binary Theme</a></span> | 
+                <span>Page generated on @DateTime.UtcNow.ToString( "R" )</span> | 
+                <span>View source on <a href="@(Model.Site.Config["github"])" target="_blank" rel="noopener noreferrer nofollow">GitHub</a></span>
+            </div>
+        </div>
+        <div class="widewrapper copyright">
+            Copyright &copy; 2010-@DateTime.Now.Year Meditation Enthusiasts
+        </div>
+    </footer>
+
+    <!-- SCRIPTS (at the end so page loads faster) -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/modernizr.js"></script>
+</body>
+</html>
