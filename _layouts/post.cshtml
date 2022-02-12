@@ -1,0 +1,64 @@
+---
+layout: layout
+---
+
+@{
+    string author = "Anonymous";
+    if( Model.Page.Bag.ContainsKey( "author" ) )
+    {
+        author = Model.Page.Bag["author"].ToString();
+    }
+}
+
+<div class="row">
+    <div class="col-md-8 blog-main">
+        <article id="maincontents">
+            @if( Model.Page.Bag.ContainsKey( "featured_image" ) )
+            {
+                <header>
+                    <div class="lead-image">
+                        <img class="img-responsive" src="@(Model.Page.Bag["feature_image"])" alt="Featured Image"/>
+                    </div>
+                </header>
+            }
+            <div class="body">
+                <h1>@Model.Page.Title</h1>
+                <div class="meta">
+                    <i class="fa fa-user"></i> @author
+                    <i class="fa fa-calendar"> @Model.Page.Date.ToString( "MMM dd yyyy" )</i>
+                </div>
+                <div id="pagecontents">
+                    @Raw( Model.Content )
+                </div>
+            </div>
+        </article>
+        <nav id="posts-nav" class="paged-navigation contain">
+            <div class="nav-older">
+                @if( Model.Previous != null )
+                {
+                    <a href="@Model.Previous.Url" title="Previous Post: @Model.Previous.Title">&larr; @Model.Previous.Title</a>
+                }
+            </div>
+            <div class="nav-newer">
+                @if( Model.Next != null )
+                {
+                    <a href="@Model.Next.Url" title="next Post: @Model.Next.Title">@Model.Next.Title &rarr; </a>
+                }
+            </div>
+            <div class="clear">&nbsp;</div>
+        </nav>
+        @if( Model.Comments )
+        {
+            <aside id="comments" class="comments">
+                Comments!
+            </aside>
+            <noscript>
+                Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener noreferrer nofollow">comments powered by Disqus.</a>
+                </noscript>
+            <a href="http://disqus.com" class="dsq-brlink" target="_blank" rel="noopener noreferrer nofollow">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        }
+    </div>
+    <aside class="col-md-4 blog aside">
+        TODO
+    </aside>
+</div>
