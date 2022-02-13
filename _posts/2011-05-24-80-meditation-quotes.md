@@ -4,7 +4,9 @@ title: "80 Meditation Quotes"
 author: Seth
 comments: true
 category: "Interesting Stuff"
+subcategory: ""
 description: "Meditation Quotes for inspiration!"
+wpid: 61
 tags: [meditation, quotes, phrases, messages, sayings, yoga]
 ---
 
