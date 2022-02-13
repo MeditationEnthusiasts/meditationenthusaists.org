@@ -1,0 +1,30 @@
+---
+layout : pagebase
+---
+
+@{
+    object tagName = Model.Page.Bag["tag"];
+}
+
+<article id="maincontents">
+    <header>
+        <h1>Posts tagged as: @tagName</h1>
+    </header>
+
+    <div id="pagecontents" class="body">
+       <ul>
+            @{
+                foreach( var cat in @Model.Site.Tags )
+                {
+                    if( cat.Name.Equals( tagName ) )
+                    {
+                        foreach( var post in cat.Posts )
+                        {
+                            @:<li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
+                        }
+                    }
+                }
+            }
+        </ul>
+    </div>
+</article>
