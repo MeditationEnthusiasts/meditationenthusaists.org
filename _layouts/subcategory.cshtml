@@ -2,8 +2,10 @@
 layout : pagebase
 ---
 
+@using Pretzel.Categories;
+
 @{
-    object catName = Model.Page.Bag["subcategory"];
+    string catName = Model.Page.Bag["subcategory"].ToString();
 }
 
 <article id="maincontents">
@@ -12,7 +14,11 @@ layout : pagebase
     </header>
 
     <div id="pagecontents" class="body">
-        <ul>
+        <ul class="clean-list">
+            @foreach( var post in Model.Site.GetPostsFromSubCategory( catName ) )
+            {
+                <li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
+            }
         </ul>
     </div>
 </article>
