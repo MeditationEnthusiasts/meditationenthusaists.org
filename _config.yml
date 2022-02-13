@@ -2,6 +2,7 @@ pretzel:
     engine: razor
 
 category_pages_layout: category
+subcategory_pages_layout: subcategory
 tag_pages_layout: tag
 permalink: "/:slug_categories/:title/"
 
@@ -16,6 +17,7 @@ github: https://github.com/MeditationEnthusiasts/meditationenthusaists.org
 githubissues: https://github.com/MeditationEnthusiasts/meditationenthusaists.org/issues
 website_version: "6.0.0"
 disqus_shortname: meditationenthusiasts-org
+enable_subcategories: true
 
 exclude:
  - .gitignore

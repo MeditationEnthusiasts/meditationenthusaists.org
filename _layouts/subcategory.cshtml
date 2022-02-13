@@ -1,0 +1,18 @@
+---
+layout : pagebase
+---
+
+@{
+    object catName = Model.Page.Bag["subcategory"];
+}
+
+<article id="maincontents">
+    <header>
+        <h1>Posts in category: @catName</h1>
+    </header>
+
+    <div id="pagecontents" class="body">
+        <ul>
+        </ul>
+    </div>
+</article>
