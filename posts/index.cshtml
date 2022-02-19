@@ -14,30 +14,30 @@ layout : pagebase
     </header>
 
     <div id="pagecontents" class="body">
-            @foreach( var topLevelCategory in categoryPages )
-            {
-                <strong><a href="@topLevelCategory.Url">@topLevelCategory.CategoryName</a></strong>
-                <ul class="clean-list">
-                    @foreach( var topLevelPost in topLevelCategory.Posts )
-                    {
-                        <li><a href="@topLevelPost.Url">@topLevelPost.Title</a> - @topLevelPost.Bag["description"]</li>
-                    }
+        @foreach( var topLevelCategory in categoryPages )
+        {
+            <strong><a href="@topLevelCategory.Url">@topLevelCategory.CategoryName</a></strong>
+            <ul class="clean-list">
+                @foreach( var topLevelPost in topLevelCategory.Posts )
+                {
+                    <li><a href="@topLevelPost.Url">@topLevelPost.Title</a> - @topLevelPost.Bag["description"]</li>
+                }
 
-                    @foreach( var subCat in topLevelCategory.SubCategories )
+                @foreach( var subCat in topLevelCategory.SubCategories )
+                {
+                    if( subCat.Posts.Any() == false )
                     {
-                        if( subCat.Posts.Any() == false )
-                        {
-                            continue;
-                        }
-                        <li><strong><a href="@subCat.Url">@subCat.CategoryName</a></strong></li>
-                        <ul class="clean-list">
-                            @foreach( var post in subCat.Posts )
-                            {
-                                <li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
-                            }
-                        </ul>
+                        continue;
                     }
-                </ul>
-            }
+                    <li><strong><a href="@subCat.Url">@subCat.CategoryName</a></strong></li>
+                    <ul class="clean-list">
+                        @foreach( var post in subCat.Posts )
+                        {
+                            <li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
+                        }
+                    </ul>
+                }
+            </ul>
+        }
     </div>
 </article>

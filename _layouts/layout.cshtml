@@ -4,6 +4,10 @@
 @using Pretzel.Logic.Templating.Context
 @using Page = Pretzel.Logic.Templating.Context.Page
 
+@{
+    StringBuilder breadcrumbBuilder = new StringBuilder();
+}
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -99,7 +103,11 @@
         <div class="widewrapper subheader">
             <div class="container">
                 <div class="clean-breadcrumb">
-                    <a href="#">Blog</a>
+                    @foreach( string crumb in @Model.Page.Url.Split( '/', StringSplitOptions.RemoveEmptyEntries ) )
+                    {
+                        breadcrumbBuilder.Append( $"/{crumb}" );
+                        <a href="@breadcrumbBuilder">@crumb</a> <span class="separator">/</span> 
+                    }
                 </div>
                 <div class="clean-searchbox">
                     <iframe

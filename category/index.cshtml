@@ -1,0 +1,37 @@
+---
+layout : pagebase
+---
+
+@using Pretzel.Categories;
+
+@{
+    var categoryPages = Model.Site.GetCategoryPages();
+}
+
+<article id="maincontents">
+    <header>
+        <h1>All Categories</h1>
+    </header>
+
+    <div id="pagecontents" class="body">
+        <ul class="clean-list">
+            @foreach( var topLevelCategory in categoryPages )
+            {
+                <li>
+                    <a href="@(topLevelCategory.Url)">@(topLevelCategory.Page.Title)</a>
+                    @if( topLevelCategory.SubCategories.Any() )
+                    {
+                        <ul class="clean-list">
+                            @foreach( var subCategory in topLevelCategory.SubCategories )
+                            {
+                                <li>
+                                    <a href="@(subCategory.Url)">@(subCategory.Page.Title)</a>
+                                </li>
+                            }
+                        </ul>
+                    }
+                </li>
+            }
+        </ul>
+    </div>
+</article>
