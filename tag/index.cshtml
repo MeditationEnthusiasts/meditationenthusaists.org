@@ -1,0 +1,22 @@
+---
+layout : pagebase
+---
+
+<article id="maincontents">
+    <header>
+        <h1>All Tags</h1>
+    </header>
+
+    <div id="pagecontents" class="body clearfix">
+        <ul class="tags">
+            @foreach( var sitePage in Model.Site.Pages )
+            {
+                if( sitePage.Bag.ContainsKey( "tag" ) == false )
+                {
+                    continue;
+                }
+                <li><a href="@sitePage.Url">@sitePage.Title</a></li>
+            }
+        </ul>
+    </div>
+</article>
