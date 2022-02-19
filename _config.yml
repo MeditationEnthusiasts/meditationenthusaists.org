@@ -4,7 +4,7 @@ pretzel:
 category_pages_layout: category
 subcategory_pages_layout: subcategory
 tag_pages_layout: tag
-permalink: "/:slug_categories/:slug_subcategory/:title/"
+permalink: "/posts/:slug_categories/:slug_subcategory/:title/"
 
 # Site settings
 author: Meditation Enthusiasts
