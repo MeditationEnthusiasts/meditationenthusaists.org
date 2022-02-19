@@ -23,7 +23,7 @@ layout: layout
                     {
                         <li>
                             <a href="@(key.Url)">@(key.Title)</a>
-                            @if( categories[key].Count > 0 )
+                            @if( categories[key].Any() )
                             {
                                 <ul class="clean-list">
                                     @foreach( var subCategory in categories[key] )

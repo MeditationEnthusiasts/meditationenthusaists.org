@@ -2,8 +2,11 @@
 layout : pagebase
 ---
 
+@using Pretzel.Categories;
+
 @{
-    object catName = Model.Page.Bag["category"];
+    string catName = Model.Page.Bag["category"].ToString();
+    var posts = Model.Site.GetPostsFromCategory( catName );
 }
 
 <article id="maincontents">
@@ -12,7 +15,30 @@ layout : pagebase
     </header>
 
     <div id="pagecontents" class="body">
-        <ul>
+        <ul class="clean-list">
+            @foreach( var topLevelPost in posts[string.Empty] )
+            {
+                <li><a href="@topLevelPost.Url">@topLevelPost.Title</a> - @topLevelPost.Bag["description"]</li>
+            }
+
+            @foreach( var subPosts in posts.Keys )
+            {
+                if( string.IsNullOrWhiteSpace( subPosts ) )
+                {
+                    continue;
+                }
+                else if( posts[subPosts].Any() == false )
+                {
+                    continue;
+                }
+                <li><strong>@subPosts</strong></li>
+                <ul class="clean-list">
+                    @foreach( var post in posts[subPosts] )
+                    {
+                        <li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
+                    }
+                </ul>
+            }
         </ul>
     </div>
 </article>
