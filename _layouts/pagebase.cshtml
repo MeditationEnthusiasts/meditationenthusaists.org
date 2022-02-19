@@ -19,17 +19,17 @@ layout: layout
             </header>
             <div class="body">
                 <ul class="clean-list">
-                    @foreach( var key in categories.Keys )
+                    @foreach( var topLevelCategory in categories )
                     {
                         <li>
-                            <a href="@(key.Url)">@(key.Title)</a>
-                            @if( categories[key].Any() )
+                            <a href="@(topLevelCategory.Url)">@(topLevelCategory.Page.Title)</a>
+                            @if( topLevelCategory.SubCategories.Any() )
                             {
                                 <ul class="clean-list">
-                                    @foreach( var subCategory in categories[key] )
+                                    @foreach( var subCategory in topLevelCategory.SubCategories )
                                     {
                                         <li>
-                                            <a href="@(subCategory.Url)">@(subCategory.Title)</a>
+                                            <a href="@(subCategory.Url)">@(subCategory.Page.Title)</a>
                                         </li>
                                     }
                                 </ul>

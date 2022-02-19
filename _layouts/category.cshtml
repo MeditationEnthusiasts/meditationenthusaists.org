@@ -6,7 +6,7 @@ layout : pagebase
 
 @{
     string catName = Model.Page.Bag["category"].ToString();
-    var posts = Model.Site.GetPostsFromCategory( catName );
+    var topLevelCategory = Model.Site.GetTopLevelCategory( catName );
 }
 
 <article id="maincontents">
@@ -16,24 +16,20 @@ layout : pagebase
 
     <div id="pagecontents" class="body">
         <ul class="clean-list">
-            @foreach( var topLevelPost in posts[string.Empty] )
+            @foreach( var topLevelPost in topLevelCategory.Posts )
             {
                 <li><a href="@topLevelPost.Url">@topLevelPost.Title</a> - @topLevelPost.Bag["description"]</li>
             }
 
-            @foreach( var subPosts in posts.Keys )
+            @foreach( var subCat in topLevelCategory.SubCategories )
             {
-                if( string.IsNullOrWhiteSpace( subPosts ) )
+                if( subCat.Posts.Any() == false )
                 {
                     continue;
                 }
-                else if( posts[subPosts].Any() == false )
-                {
-                    continue;
-                }
-                <li><strong>@subPosts</strong></li>
+                <li><strong><a href="@subCat.Url">@subCat.CategoryName</a></strong></li>
                 <ul class="clean-list">
-                    @foreach( var post in posts[subPosts] )
+                    @foreach( var post in subCat.Posts )
                     {
                         <li><a href="@post.Url">@post.Title</a> - @post.Bag["description"]</li>
                     }
