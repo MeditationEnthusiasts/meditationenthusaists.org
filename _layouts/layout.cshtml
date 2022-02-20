@@ -3,9 +3,10 @@
 @using System.Text
 @using Pretzel.Logic.Templating.Context
 @using Page = Pretzel.Logic.Templating.Context.Page
+@using SitePlugin;
 
 @{
-    StringBuilder breadcrumbBuilder = new StringBuilder();
+    var breadCrumbs = BreadCrumbGenerator.GenerateBreadCrumbs( Model.Page.Url );
 }
 
 <!DOCTYPE html>
@@ -103,10 +104,16 @@
         <div class="widewrapper subheader">
             <div class="container">
                 <div class="clean-breadcrumb">
-                    @foreach( string crumb in @Model.Page.Url.Split( '/', StringSplitOptions.RemoveEmptyEntries ) )
+                    @if( breadCrumbs.Any() )
                     {
-                        breadcrumbBuilder.Append( $"/{crumb}" );
-                        <a href="@breadcrumbBuilder">@crumb</a> <span class="separator">/</span> 
+                        foreach( BreadCrumb crumb in breadCrumbs )
+                        {
+                            <span class="separator"> / </span><a href="@crumb.Url">@crumb.Text</a>
+                        }
+                    }
+                    else
+                    {
+                        <span class="separator"> / </span>
                     }
                 </div>
                 <div class="clean-searchbox">

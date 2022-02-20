@@ -4,6 +4,7 @@ const string pretzelExe = "./_pretzel/src/Pretzel/bin/Debug/netcoreapp3.1/Pretze
 const string pluginDir = "./_plugins";
 const string categoryPlugin = "./_plugins/Pretzel.Categories.dll";
 const string extensionPlugin = "./_plugins/Pretzel.SethExtensions.dll";
+const string sitePlugin = "./_plugins/SitePlugin.dll";
 
 // ---------------- Tasks ----------------
 
@@ -34,8 +35,40 @@ Task( "build_pretzel" )
     }
 ).Description( "Compiles Pretzel" );
 
+Task( "build_plugin" )
+.Does(
+    () =>
+    {
+        BuildPlugin();
+    }
+).Description( "Builds the site-specific plugin" );
+
+void BuildPlugin()
+{
+    CheckPretzelDependency();
+
+    Information( "Building Plugin..." );
+
+    var  settings = new DotNetPublishSettings
+    {
+        Configuration = "Debug",
+        NoBuild = false,
+        NoRestore = false,
+        PublishTrimmed = true
+    };
+
+    DotNetPublish( "./_siteplugin/SitePlugin.sln", settings );
+
+    EnsureDirectoryExists( pluginDir );
+    FilePathCollection files = GetFiles( "./_siteplugin/SitePlugin/bin/Debug/netstandard2.1/publish/SitePlugin.*" );
+    CopyFiles( files, Directory( pluginDir ) );
+
+    Information( "Building Plugin... Done!" );
+}
+
 Task( "build_all" )
 .IsDependentOn( "build_pretzel" )
+.IsDependentOn( "build_plugin")
 .IsDependentOn( "taste" );
 
 // ---------------- Functions  ----------------
@@ -71,6 +104,7 @@ void BuildPretzel()
 void RunPretzel( string argument, bool abortOnFail )
 {
     CheckPretzelDependency();
+    CheckSitePluginDependency();
 
     bool fail = false;
     string onStdOut( string line )
@@ -118,6 +152,14 @@ void CheckPretzelDependency()
     )
     {
         BuildPretzel();
+    }
+}
+
+void CheckSitePluginDependency()
+{
+    if( FileExists( sitePlugin ) == false )
+    {
+        BuildPlugin();
     }
 }
 
