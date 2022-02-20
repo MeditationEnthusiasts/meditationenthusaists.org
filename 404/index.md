@@ -9,6 +9,6 @@ tags: [404, page, not, found, error]
 That URL was not found.  It may have gotten removed or moved somewhere else.
 
 You can try the following:
- * Try using the search function if you're trying to find the page.
- * You can also type in the URL on the [Wayback Machine](https://web.archive.org/), and see if a previous page exists.
- * Otherwise, try returning [Home](/) and try again.
+* Try using the search function if you're trying to find the page.
+* You can also type in the URL on the [Wayback Machine](https://web.archive.org/), and see if a previous page exists.
+* Otherwise, try returning [Home](/) and try again.
