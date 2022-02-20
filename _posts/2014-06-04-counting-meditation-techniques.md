@@ -8,7 +8,7 @@ subcategory: "Meditation Techniques"
 description: "Meditation techniques that are as simple as counting."
 wpid: 190
 featured_image: /static/img/featured/counting.png
-tags: [beginners, count, counting, howto, meditate, meditating, meditation, numbers, repeat, starting, technique]
+tags: [beginners, count, counting, howto, meditate, meditating, meditation, numbers, repeat, starting, technique, video, YouTube]
 ---
 
 <iframe src="https://www.youtube.com/embed/7kKVQGvg1dU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
