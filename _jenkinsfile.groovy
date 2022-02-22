@@ -1,9 +1,10 @@
 @Library( "X13JenkinsLib" )_
 
+final String CakeVersion = "2.0.0";
+final String Url = "staging.meditationenthusiasts.org";
+
 pipeline
 {
-    final String CakeVersion = "2.0.0";
-    final String Url = "staging.meditationenthusiasts.org";
 
     agent
     {
