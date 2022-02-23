@@ -1,5 +1,6 @@
 ---
 layout: nil
 ---
-@using Pretzel.Logic.Templating.Context
-@Include( "robots.cstxt", Model, typeof( PageContext ) )
+
+User-agent: *
+Disallow: /
