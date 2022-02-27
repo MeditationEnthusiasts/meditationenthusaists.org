@@ -9,6 +9,8 @@ layout: nil
 
 @Include( "htaccess.cstxt", Model, typeof( PageContext ) )
 
+ErrorDocument 404 /404/
+
 # Redirect old wordpress URLs to new ones.
 @foreach( var page in Model.Site.Posts )
 {
@@ -20,7 +22,7 @@ layout: nil
             continue;
         }
 
-        string oldUrl = $"/{SlugifyFilter.Slugify( category )}/{Path.GetFileName( Path.GetDirectoryName( page.OutputFile ) )}";
+        string oldUrl = $"/{SlugifyFilter.Slugify( category )}/{Path.GetFileName( Path.GetDirectoryName( page.OutputFile ) )}/";
 @:Redirect 301 @(oldUrl) @(page.Url)
     }
 }
