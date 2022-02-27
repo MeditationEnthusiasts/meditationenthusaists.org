@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "A story about where ultimate power lies."
 wpid: 53
-featured_image: /static/img/featured/quotes.png
 tags: [buddhism, creation, enlightenment, god, inner, inside, nirvana, power, religion, spiritual, ultimate]
 ---
 
