@@ -2,6 +2,8 @@
 layout: pagebase
 ---
 
+@using Pretzel.Logic.Extensibility.Extensions;
+
 @{
     string author = "Anonymous";
     if( Model.Page.Bag.ContainsKey( "author" ) )
@@ -30,23 +32,40 @@ layout: pagebase
         </div>
     </div>
 </article>
-<nav id="posts-nav" class="paged-navigation contain">
-    <div class="nav-older">
+
+<hr/>
+
+<nav id="posts-nav" style="display: flex; justify-content: space-around;">
+    <div>
         @if( Model.Previous != null )
         {
             <a href="@Model.Previous.Url" title="Previous Post: @Model.Previous.Title">&larr; @Model.Previous.Title</a>
         }
     </div>
-    <div class="nav-newer">
+    <div>
         @if( Model.Next != null )
         {
             <a href="@Model.Next.Url" title="next Post: @Model.Next.Title">@Model.Next.Title &rarr; </a>
         }
     </div>
-    <div class="clear">&nbsp;</div>
 </nav>
+
+@if( Model.Page.Tags.Any() )
+{
+    <asid id="tags" class="clearfix">
+        <h2>Tagged as:</h2>
+        <ul class="tags">
+        @foreach( string tag in Model.Page.Tags )
+        {
+            <li><a href="/tag/@SlugifyFilter.Slugify( tag )/">@tag</a></li>
+        }
+        </ul>
+    </asid>
+}
+
 @if( Model.Comments )
 {
+    <h2>Comments:</h2>
     <aside id="comments" class="comments">
         Comments!
     </aside>
