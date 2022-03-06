@@ -1,0 +1,53 @@
+---
+layout: page
+---
+
+@using Pretzel.SethExtensions;
+
+@{
+    const int numberPosts = 6;
+    var recentPosts = Model.Site.Posts.OrderBy(
+        p => p.Date
+    ).Take( numberPosts ).ToArray();
+}
+
+@Raw( Model.Content )
+
+@for( int i = 0; i < recentPosts.Length; )
+{
+    <div class="row">
+    @for( int row = 0; row < 2; ++row )
+    {
+        var post = recentPosts[i];
+        
+        <div class="col-md-6 col-sm-6">
+            <article class="blog-teaser">
+                <header>
+                    @if( post.Bag.ContainsKey( "featured_image" ) )
+                    {
+                        <img src="@post.Bag["featured_image"]" alt="featured image"/>
+                        <h3>@post.Title</h3>
+                    }
+                    else
+                    {
+                        <h3 style="padding-top:1em;">@post.Title</h3>
+                    }
+                    <span class="meta">
+                        <i class="fa fa-user"></i> @post.GetAuthor()
+                        <i class="fa fa-calendar"> @post.Date.ToString( "MMM dd yyyy" )</i>
+                    </span>
+                    <hr/>
+                </header>
+                <div class="body">
+                    <p>TODO</p>
+                </div>
+                <div class="clearfix">
+                    <a class="btn btn-clean-one" href="@post.Url">Read More</a>
+                </div>
+            </article>
+        </div>
+
+        ++i;
+    }
+    </div>
+}
