@@ -15,6 +15,8 @@ You got yourself into a comfortable [position for meditation](/posts/about-medit
 
 That's it.
 
+<!--more-->
+
 Relax your body, and just observe the inhale and exhale. Don't force it, but just let the breath flow naturally. What works for me is a slow, silent, but full breath; this type of breath really relaxes both my mind and my body, but do what's best for you.
 
 If you get distracted by thoughts, just let your attention return to the breath.  This will take some time to get used to.  That's okay though, since eventually, your thoughts will quiet down, and your mind will relax. When your mind and body relax, you will feel a nice, calm, peaceful feeling.

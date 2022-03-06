@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Meditation: Video"
+title: "How to Meditate: Video"
 author: Seth
 comments: true
 category: "About Meditation"
@@ -11,6 +11,8 @@ tags: [anapanasati, breath, focus, howto, lotus, meditating, meditation, positio
 ---
 
 Below is a video on how to meditate. It covers what posture you should sit in, and how to practice meditation.
+
+<!--more-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9h3kI2HJixQ" frameborder="0" allowfullscreen></iframe>
 

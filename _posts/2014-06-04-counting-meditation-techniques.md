@@ -11,9 +11,11 @@ featured_image: /static/img/featured/counting.png
 tags: [beginners, count, counting, howto, meditate, meditating, meditation, numbers, repeat, starting, technique, video, YouTube]
 ---
 
-<iframe src="https://www.youtube.com/embed/7kKVQGvg1dU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
 We, as humans, have counted ever since we were in preschool.  Counting, for many of us, was the first step into the very important world of numbers and mathematics.  However, it can also be the first step into meditation.  Many techniques online say to focus on the breath, body, mantra, or the something else entirely.  However, for beginners, these techniques might be difficult.  So, why focus on something that we've done since we were young?  Counting!  Starting with counting meditations can enable the new meditator to practice focusing on something before moving on to the [breath](/about-meditation/meditation-techniques/focusing-on-the-breath/), [mantra](/about-meditation/meditation-techniques/mantra-meditation/) or other points of focus. Counting meditation is a great way for beginners to get started on the meditation path!
+
+<!--more-->
+
+<iframe src="https://www.youtube.com/embed/7kKVQGvg1dU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Here's one way to do it:
 

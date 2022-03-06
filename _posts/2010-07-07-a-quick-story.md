@@ -16,6 +16,8 @@ Back in the beginning, when god (or gods, depending on your religion) created ma
 
 He thought of hiding it far underground, but if man figured out it was down there, they would just dig for it until they got to it.
 
+<!--more-->
+
 He thought of hiding it in the sky, but man would just figure out a way to get to it easily.
 
 So he finally figured out one spot where man would never look for this ultimate power: Inside man him(or her)self!

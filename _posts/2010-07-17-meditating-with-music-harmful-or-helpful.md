@@ -13,6 +13,8 @@ tags: [bad, debate, good, harmful, helpful, meditation, music, sound, yoga, vide
 
 I am everywhere on the internet. On the internet, there seems to be an argument over whether or not meditating with music playing in the background is helpful or harmful. Some people say that it relaxes the mind and body quicker, while others say it is a distraction, and will interrupt the practice. Who's right?
 
+<!--more-->
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3ZzdF8ifeEQ" frameborder="0" allowfullscreen></iframe>
 
 They're both right. Usually when people argue over this, it is because they are talking about their own experiences. People who find music calming will say to meditate with music, others who get distracted will say not to because it is, well, distracting. They're not wrong in terms of talking about themselves, but they may be wrong when talking about yourself.

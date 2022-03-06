@@ -22,6 +22,8 @@ Mantra meditation is meditation on a phrase, idea, or word. The word can be anyt
 
 Although these are common mantras, mantras, can be anything you want them to be; not matter how long or short it is.
 
+<!--more-->
+
 Mantra meditation is simple (as are most meditation techniques). Get into a comfortable [position](/posts/about-meditation/meditation-postures), relax your body, and then repeat your mantra.
 
 There are several ways you can repeat your mantra.

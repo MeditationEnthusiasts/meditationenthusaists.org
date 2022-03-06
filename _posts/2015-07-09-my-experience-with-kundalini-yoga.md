@@ -11,9 +11,11 @@ featured_image: /static/img/featured/kundalini.jpg
 tags: [asana, breath, chakra, class, college, experience, kriya, kundalini, meditation, pranayama, video, yoga, YouTube]
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M_fTT1J5ypw" frameborder="0" allowfullscreen></iframe>
-
 During my final semester at college I decided to sign up for a Kundalini Yoga class. I always wanted to take a yoga class, but never had the opportunity. I picked Kundalini Yoga since it fit in my schedule. I knew going in it was a mostly mental/meditative form of yoga compared to the other kinds of yoga as my boyfriend took it the previous year. For those who were curious about Kundalini yoga, here's my experience with it.
+
+<!--more-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M_fTT1J5ypw" frameborder="0" allowfullscreen></iframe>
 
 ## What is Kundalini Yoga?
 

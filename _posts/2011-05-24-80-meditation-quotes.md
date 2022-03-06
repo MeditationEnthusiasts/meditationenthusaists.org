@@ -18,6 +18,7 @@ tags: [meditation, quotes, phrases, messages, sayings, yoga]
  1. "Meditation is silence. Silence is God in his infinity's smile." -Sri Chinmoy
  1. "You are never alone or helpless. The force that guides the stars guides you too" -Shrii Shrii Anandamurt
  1. "Meditation is the tongue of the soul and the language of our spirit" - Jeremy Taylor
+ <!--more-->
  1. "Cry within. Meditate within. Dive within. Your inner achievements will far outweigh your outer imperfections" -Sri Chinmoy
  1. "In deep meditation, the flow of concentration is continuous like the flow of oil" -Patanjali
  1. "When you meditate, the silence of the senses illumines the presence of God within" -Gurumayi Chidvilasananda
