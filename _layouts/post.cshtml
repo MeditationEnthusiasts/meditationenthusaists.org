@@ -3,14 +3,7 @@ layout: pagebase
 ---
 
 @using Pretzel.Logic.Extensibility.Extensions;
-
-@{
-    string author = "Anonymous";
-    if( Model.Page.Bag.ContainsKey( "author" ) )
-    {
-        author = Model.Page.Bag["author"].ToString();
-    }
-}
+@using Pretzel.SethExtensions;
 
 <article id="maincontents" class="blog-post">
     @if( Model.Page.Bag.ContainsKey( "featured_image" ) )
@@ -24,7 +17,7 @@ layout: pagebase
     <div class="body">
         <h1>@Model.Page.Title</h1>
         <div class="meta">
-            <i class="fa fa-user"></i> @author
+            <i class="fa fa-user"></i> @Model.Page.GetAuthor();
             <i class="fa fa-calendar"> @Model.Page.Date.ToString( "MMM dd yyyy" )</i>
         </div>
         <div id="pagecontents">
