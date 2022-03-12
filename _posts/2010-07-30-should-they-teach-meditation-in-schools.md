@@ -14,6 +14,8 @@ High school: it can be the best, but also the most stressful time in your life (
 
 If you guessed meditation, YOU ARE CORRECT! Meditation helps calm the body and mind, and can reduce stress levels, so why not teach it in school? Let's list some reasons why they should, along with obstacles that need to be overcome to incorporate it in to any school curriculum.
 
+<!--more-->
+
 ### Students need relaxation time
 
 School's tough, and you never have time to relax during it. You were always worried about getting your homework done, preparing for the next test, or nervous about your oral presentation coming up. When I was in high school, and even now in college, I never had time to relax during the school day. If an opportunity came up, it was to get a head start on homework, or study for the next calculus test. The problem was that there was never a time set a side for just relaxation. Study halls were about homework, and lunch was about quickly eating your meal in the 20 minute period after spending 17 minutes in line. The bus ride home has a bunch of noisy elementary school kids jumping around. I don't know about you, but if my school offered a meditation session, I would do it in a heart beat to escape it all, even for a little while.

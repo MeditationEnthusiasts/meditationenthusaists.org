@@ -14,6 +14,8 @@ When some asks you "Who can meditate?" what do you think of? If you never medita
 
 We all can meditate!
 
+<!--more-->
+
 It does not matter what religion, background, age, or personality. Anyone can learn and practice meditation. One of the common meditation techniques is observing your body breathing. We all breath all the time! So observing your breath is something anyone can do! Including YOU!
 
 You can be Buddhist, Catholic, Jewish, or Atheist. You can be a child, a teenager, an adult, or a senior. Anyone can experience meditation.

@@ -17,6 +17,8 @@ Padmasana.
 
 Whatever you call it, it is a difficult position to get into, let alone sit for a long time in. You do not have to meditate in the lotus position (and you should not if your aren't limber enough), as meditation is what you do with your mind, not your body. However, the lotus position, at least in my experiences, does have benefits such as stability and stillness during the meditation, and increases flexibility in the hips, knees, and ankles. Some people want to try to get into the lotus position because it is a challenge, and humans love challenges. Perhaps you are a similar person? There is nothing wrong with challenging yourself, as long as you do it SLOWLY AND CAREFULLY, especially when dealing with joints as delicate as the knees. So how can you prepare your body for the lotus position?You can prepare your body for the lotus position by using a series of yoga poses. A website called "Some Southern Zen" which is "Just another Zen Buddhist site..." (they called themselves that, not me) lays out a series of yoga asanas you can try to increase your hip flexibility, and eventually work your way up to the lotus position. Link: [http://zenmontpellier.voila.net/eng/lotus/lotuseng.html](http://zenmontpellier.voila.net/eng/lotus/lotuseng.html)
 
+<!--more-->
+
 I like this site. It helped me get into the lotus pose, and I hope it will have the same effect on you.
 
 Obviously, take each pose slowly, and DO NOT FORCE YOURSELF. If you feel ANY pain or discomfort, you should probably stop before you tear or twist something.
