@@ -6,7 +6,7 @@ layout: page
 
 @{
     const int numberPosts = 6;
-    var recentPosts = Model.Site.Posts.OrderByDecending(
+    var recentPosts = Model.Site.Posts.OrderByDescending(
         p => p.Date
     ).Take( numberPosts ).ToArray();
 }
