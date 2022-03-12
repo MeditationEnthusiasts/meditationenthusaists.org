@@ -16,6 +16,8 @@ A common misconception of meditation is that meditation is just conscious sleep.
 
 So what exactly is the difference? I mean, both meditation and sleep relax and rejuvenate the body. Here are a few differences.
 
+<!--more-->
+
 * While you sleep, your body may be relaxed, but your mind is still racing around with thoughts, dreams, and is never resting. In meditation, your mind does have a chance to relax.
 * You can meditate for 15 minutes and feel better, but if you sleep for 15 minutes, you feel more tired than you did before you fell asleep.
 * You can meditate anytime, anywhere, but to sleep, you usually need a quiet, dark place so you can actually fall asleep.
