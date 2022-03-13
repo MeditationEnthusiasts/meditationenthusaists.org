@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "YouTube video of someone's first time meditating."
 wpid: 150
-featured_image: /static/img/featured/quotes.png
 tags: [cecam-taller, experience, first, meditation, meditating, time, video, YouTube]
 ---
 
