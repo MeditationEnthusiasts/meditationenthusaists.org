@@ -37,3 +37,5 @@ This looks like a cool project, and look forward to seeing the results!
 Happy Meditating!
 
 -Seth
+
+P.S. This is NOT a sponsored post.  I just found this cool and wanted to share.
