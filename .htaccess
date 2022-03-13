@@ -16,13 +16,21 @@ ErrorDocument 404 /404/
 {
     if( page.Bag.ContainsKey( "wpid" ) )
     {
-        string category = page.TryGetCategory();
-        if( string.IsNullOrWhiteSpace( category ) )
+        string oldUrl;
+        if( page.Bag.ContainsKey( "oldurl" )== false )
         {
-            continue;
-        }
+            string category = page.TryGetCategory();
+            if( string.IsNullOrWhiteSpace( category ) )
+            {
+                continue;
+            }
 
-        string oldUrl = $"/{SlugifyFilter.Slugify( category )}/{Path.GetFileName( Path.GetDirectoryName( page.OutputFile ) )}/";
+            oldUrl = $"/{SlugifyFilter.Slugify( category )}/{Path.GetFileName( Path.GetDirectoryName( page.OutputFile ) )}/";
+        }
+        else
+        {
+            oldUrl = page.Bag["oldurl"].ToString();
+        }
 @:Redirect 301 @(oldUrl) @(page.Url)
     }
 }

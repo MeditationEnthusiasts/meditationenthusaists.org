@@ -4,7 +4,7 @@ title: "Meditating with Music: Harmful or Helpful?"
 author: Seth
 comments: true
 category: "About Meditation"
-subcategory: ""
+subcategory: "Meditation Tips"
 description: "There's a debate on if one should mediate with music.  Who's right?"
 wpid: 45
 featured_image: /static/img/featured/music.png

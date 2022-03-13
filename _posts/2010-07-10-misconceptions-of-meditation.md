@@ -4,7 +4,7 @@ title: "Misconceptions of Meditation"
 author: Seth
 comments: true
 category: "About Meditation"
-subcategory: ""
+subcategory: "Meditation Tips"
 description: "Mythbusting meditation misconceptions"
 wpid: 105
 tags: [breath, contort, easy, eyes, hard, meditation, misconceptions, mythbusting, religion, video, YouTube]

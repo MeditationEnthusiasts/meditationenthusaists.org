@@ -4,7 +4,7 @@ title: "The Lotus Position, and How to Prepare for it"
 author: Seth
 comments: true
 category: "About Meditation"
-subcategory: ""
+subcategory: "Meditation Tips"
 description: "How to warm up to sitting in the most difficult position."
 wpid: 42
 featured_image: /static/img/featured/lotus_blue_background.jpg

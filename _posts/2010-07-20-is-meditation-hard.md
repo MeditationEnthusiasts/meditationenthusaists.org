@@ -4,7 +4,7 @@ title: "Is Meditation Hard?"
 author: Seth
 comments: true
 category: "About Meditation"
-subcategory: ""
+subcategory: "Meditation Tips"
 description: "How difficult is meditation, really?"
 wpid: 38
 tags: [breath, difficult, hard, easy, meditation, relax, video, YouTube]
