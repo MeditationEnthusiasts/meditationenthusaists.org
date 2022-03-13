@@ -16,4 +16,4 @@ Before following any of the techniques on this site, please talk to your doctor 
 
 ### Sponsored content
 
-By default, there is **no** sponsored content on this site.  Posts that contain sponsored content will say they are.
+By default, posts contain **no** sponsored content.  Posts that contain sponsored content will say that they are.
