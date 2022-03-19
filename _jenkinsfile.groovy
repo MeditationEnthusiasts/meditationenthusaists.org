@@ -72,10 +72,16 @@ pipeline
                     steps
                     {
                         "./cake/dotnet-cake ./checkout/build.cake --target=run_tests --test_result_dir='${pwd()}/TestResults/'";
-                        X13ParseMsTestResults(
-                            filePattern: "${pwd()}/TestResults/*.xml"
-                            abortOnFail: true
-                        );
+                    }
+                    post
+                    {
+                        always
+                        {
+                            X13ParseMsTestResults(
+                                filePattern: "${pwd()}/TestResults/*.xml",
+                                abortOnFail: true
+                            );
+                        }
                     }
                 }
             }
