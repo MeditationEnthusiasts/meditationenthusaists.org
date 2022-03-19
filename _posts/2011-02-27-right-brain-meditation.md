@@ -7,7 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "Visualization technique to quiet down thoughts."
 wpid: 28
-featured_image: /static/img/featured/right_Brain.png
+featured_image: /static/img/featured/right_brain.png
 tags: [body, brain, focus, howto, left, meditating, meditation, right, technique, video, visualization, visualize, YouTube]
 ---
 
