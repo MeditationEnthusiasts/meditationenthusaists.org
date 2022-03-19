@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "What to do if you get lightheaded during meditation."
 wpid: 40
-id: "lightheadedness-during-meditation"
 tags: [breath, food, health, lightheaded, sick, unwell, water]
 ---
 

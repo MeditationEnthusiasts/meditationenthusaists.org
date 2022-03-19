@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "A technique I learned while taking a Kundalini Yoga class."
 wpid: 393
-id: "kirtan-kriya-sa-ta-na-ma-meditation"
 featured_image: /static/img/featured/satanama.gif
 tags: [howto, kirtan, kriya, kundalini, ma, mantra, meditation, na, sa, sanskrit, ta, technique, video, yoga, YouTube]
 ---

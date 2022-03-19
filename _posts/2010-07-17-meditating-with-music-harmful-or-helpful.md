@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "There's a debate on if one should mediate with music.  Who's right?"
 wpid: 45
-id: "meditating-with-music-harmful-or-helpful"
 featured_image: /static/img/featured/music.png
 tags: [bad, debate, good, harmful, helpful, meditation, music, sound, yoga, video, YouTube]
 ---

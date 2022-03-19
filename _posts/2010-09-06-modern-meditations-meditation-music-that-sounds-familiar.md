@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "Popular songs redone as meditation music."
 wpid: 65
-id: "modern-meditations-meditation-music-that-sounds-familiar"
 featured_image: /static/img/featured/modernmeditations.png
 tags: [beatles, classic, meditation, modern, music, nirvana, relax, rock, sound, song, u2, video, YouTube]
 ---

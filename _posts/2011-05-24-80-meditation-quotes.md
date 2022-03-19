@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "Meditation Quotes for inspiration!"
 wpid: 61
-id: "80-meditation-quotes"
 featured_image: /static/img/featured/quotes.png
 tags: [meditation, quotes, phrases, messages, sayings, yoga]
 ---

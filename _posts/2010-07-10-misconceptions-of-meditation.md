@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "Mythbusting meditation misconceptions"
 wpid: 105
-id: "misconceptions-of-meditation"
 tags: [breath, contort, easy, eyes, hard, meditation, misconceptions, mythbusting, religion, video, YouTube]
 ---
 

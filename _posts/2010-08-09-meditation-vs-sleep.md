@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: ""
 description: "Meditation and Sleep may seem similar, but they are not the same."
 wpid: 48
-id: "meditation-vs-sleep"
 featured_image: /static/img/featured/sleep.png
 tags: [bed, conscious, dreams, meditation, relax, replace, sleep, snooze]
 ---

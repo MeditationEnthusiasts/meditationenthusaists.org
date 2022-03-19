@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: ""
 description: "Who is able to meditate?"
 wpid: 142
-id: "who-can-meditate"
 tags: [anyone, everyone, meditation, who, you]
 ---
 

@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "Kickstarter project I found that tries to film people all over the world meditating."
 wpid: 170
-id: "a-peace-of-the-world"
 tags: [city, Kickstarter, new, nyc, peace, public, video, vimeo, world, york]
 ---
 

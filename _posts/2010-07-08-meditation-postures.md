@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "There are many ways to sit while meditating.  Pick the most comfortable!"
 wpid: 22
-id: meditation-postures
 featured_image: /static/img/lotus_front.jpg
 tags: [burmese, corpse, easy, full, half, lotus, meditation, perfect, pose, position, posture, prepare, quarter, seiza, siddhasana, sit, sitting, yoga]
 ---

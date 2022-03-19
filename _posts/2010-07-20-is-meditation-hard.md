@@ -7,7 +7,6 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "How difficult is meditation, really?"
 wpid: 38
-id: "is-meditation-hard"
 tags: [breath, difficult, hard, easy, meditation, relax, video, YouTube]
 ---
 

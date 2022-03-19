@@ -7,7 +7,6 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "I took Kundalini Yoga during my last semester at college.  Here's how it went."
 wpid: 220
-id: "my-experience-with-kundalini-yoga"
 featured_image: /static/img/featured/kundalini.jpg
 tags: [asana, breath, chakra, class, college, experience, kriya, kundalini, meditation, pranayama, video, yoga, YouTube]
 ---
