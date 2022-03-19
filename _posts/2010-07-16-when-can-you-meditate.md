@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: ""
 description: "When is the best time to meditate?"
 wpid: 138
+id: "when-can-you-meditate"
 tags: [duration, meditation, minutes, time, when]
 ---
 

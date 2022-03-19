@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "Video on how to meditate by focusing on the breath."
 wpid: 16
+id: "how-to-meditate-video"
 tags: [anapanasati, breath, focus, howto, lotus, meditating, meditation, position, posture, technique, video, YouTube]
 ---
 

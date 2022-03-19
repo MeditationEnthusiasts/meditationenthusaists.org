@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "One of the easiest techniques to learn."
 wpid: 8
+id: "focusing-on-the-breath"
 featured_image: /static/img/featured/thebreath.png
 tags: [anapanasati, breath, focus, howto, meditating, meditation, technique]
 ---

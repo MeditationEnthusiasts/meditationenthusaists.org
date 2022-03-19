@@ -7,6 +7,7 @@ category: "Interesting Stuff"
 subcategory: "Opinions"
 description: "Opinion piece on should they teach meditation in schools."
 wpid: 68
+id: "should-they-teach-meditation-in-schools"
 tags: [high, opinion, school, student, teacher]
 ---
 

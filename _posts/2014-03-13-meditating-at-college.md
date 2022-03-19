@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Tips"
 description: "Tips for starting or continuing a meditation practice while at college."
 wpid: 154
+id: "meditating-at-college"
 tags: [campus, class, college, education, library, meditation, places, school, university]
 ---
 

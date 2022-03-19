@@ -7,6 +7,7 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "All about the Buddhist flag."
 wpid: 59
+id: "the-buddhist-flag"
 featured_image: /static/img/featured/buddhistflag.jpg
 tags: [buddhism, buddhist, flag, meaning, symbol]
 ---

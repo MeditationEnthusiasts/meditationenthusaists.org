@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "A visualization technique where you watch your body disappear."
 wpid: 5
+id: "eraser-technique"
 featured_image: /static/img/featured/eraser.jpg
 tags: [body, breath, eraser, erasing, focus, howto, meditation, pencil, scan, skin, technique, tension, tumblr, visualization]
 ---

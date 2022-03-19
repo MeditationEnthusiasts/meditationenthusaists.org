@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: ""
 description: "What places can you meditate?"
 wpid: 140
+id: "where-can-you-meditate"
 tags: [anywhere, can, meditate, meditation, place, where, you]
 ---
 

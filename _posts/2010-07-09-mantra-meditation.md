@@ -7,6 +7,7 @@ category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "Meditation technique that involves repeating a phrase."
 wpid: 19
+id: "mantra-meditation"
 featured_image: /static/img/featured/mantra.png
 tags: [aum, chant, focus, howto, mantra, om, meditating, meditation, personal, prayer, repeat, technique]
 ---

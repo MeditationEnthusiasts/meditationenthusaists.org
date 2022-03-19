@@ -7,6 +7,7 @@ category: "News"
 subcategory: ""
 description: "A site to submit your own meditation blog."
 wpid: 382
+id: "introducing-meditation-enthusiasts-sites"
 featured_image: /static/img/siteslogo_round.png
 tags: [atom, blog, buddhism, enthusiasts, meditation, news, reddit, rss, sites, submit, twitter, website, yoga]
 ---

@@ -7,6 +7,7 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "A story about where ultimate power lies."
 wpid: 53
+id: "a-quick-story"
 tags: [buddhism, creation, enlightenment, god, inner, inside, nirvana, power, religion, spiritual, ultimate]
 ---
 

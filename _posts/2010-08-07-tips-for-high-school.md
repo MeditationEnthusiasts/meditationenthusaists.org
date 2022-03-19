@@ -7,6 +7,7 @@ category: "Interesting Stuff"
 subcategory: ""
 description: "How to survive high school and how meditation can help."
 wpid: 117
+id: "tips-for-high-school"
 oldurl: /about-meditation/tips-for-high-school/
 tags: [education, high, homework, math, meditation, relax, school, stress, surviving, tips]
 ---
