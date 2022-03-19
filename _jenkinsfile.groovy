@@ -71,7 +71,7 @@ pipeline
                 {
                     steps
                     {
-                        "./cake/dotnet-cake ./checkout/build.cake --target=run_tests --test_result_dir='${pwd()}/TestResults/'";
+                        sh "./cake/dotnet-cake ./checkout/build.cake --target=run_tests --test_result_dir='${pwd()}/TestResults/'";
                     }
                     post
                     {
