@@ -6,7 +6,7 @@ comments: true
 category: "About Meditation"
 subcategory: "Meditation Techniques"
 description: "A meditation technique where you do not move.  AKA Strong Determination Sitting."
-wpid: 8
+wpid: 201
 id: "motionless-meditation"
 featured_image: /static/img/halflotus.png
 tags: [body, determination, howto, meditation, motionless, move, psipog, sitting, strong, technique, video, YouTube]
