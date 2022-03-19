@@ -8,7 +8,7 @@ subcategory: "Meditation Tips"
 description: "How to warm up to sitting in the most difficult position."
 wpid: 42
 id: "the-lotus-position-and-how-to-prepare-for-it"
-featured_image: /static/img/featured/lotus_blue_background.jpg
+featured_image: /static/img/lotus_blue_background.jpg
 tags: [article, full, howto, lotus, meditation, position, posture, prepare]
 ---
 
