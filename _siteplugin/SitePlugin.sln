@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitePlugin", "SitePlugin\SitePlugin.csproj", "{A892D823-B4CB-4ECC-B64A-BDCB02B4B435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SitePlugin", "SitePlugin\SitePlugin.csproj", "{A892D823-B4CB-4ECC-B64A-BDCB02B4B435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteTests", "SiteTests\SiteTests.csproj", "{393E3F10-03BB-441A-A833-13831CEFCF11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pretzel.Logic", "..\_pretzel\src\Pretzel.Logic\Pretzel.Logic.csproj", "{526CA975-ECA9-47A9-A87A-93A82750AB7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A892D823-B4CB-4ECC-B64A-BDCB02B4B435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A892D823-B4CB-4ECC-B64A-BDCB02B4B435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A892D823-B4CB-4ECC-B64A-BDCB02B4B435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393E3F10-03BB-441A-A833-13831CEFCF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393E3F10-03BB-441A-A833-13831CEFCF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393E3F10-03BB-441A-A833-13831CEFCF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393E3F10-03BB-441A-A833-13831CEFCF11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526CA975-ECA9-47A9-A87A-93A82750AB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526CA975-ECA9-47A9-A87A-93A82750AB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526CA975-ECA9-47A9-A87A-93A82750AB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526CA975-ECA9-47A9-A87A-93A82750AB7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
