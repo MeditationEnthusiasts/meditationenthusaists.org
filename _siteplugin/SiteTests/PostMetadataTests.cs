@@ -58,6 +58,29 @@ namespace SiteTests
             );
         }
 
+        [Test]
+        public void FeaturedImageExistsTest()
+        {
+            PerformActionOnPost(
+                ( postPath, metadata ) =>
+                {
+                    if( metadata.ContainsKey( "featured_image" ) == false )
+                    {
+                        return;
+                    }
+
+                    string featuredImage = metadata["featured_image"]?.ToString() ?? string.Empty;
+                    featuredImage = featuredImage.Replace( '/', Path.DirectorySeparatorChar ).TrimStart( Path.DirectorySeparatorChar );
+
+                    string expectedPath = Path.Combine( TestContants.RepoRoot, featuredImage );
+                    if( File.Exists( expectedPath ) == false)
+                    {
+                        Assert.Fail( $"Featured image '{expectedPath}' on '{postPath}' does not exist" );
+                    }
+                }
+            );
+        }
+
         // ---------------- Test Helpers -----------------
 
         private void PerformActionOnPost( Action<string, IDictionary<string, object>> postAction )
@@ -67,7 +90,7 @@ namespace SiteTests
                 string fileContent = File.ReadAllText( postPath );
 
                 IDictionary<string, object> metadata = fileContent.YamlHeader();
-                postAction( postPath, metadata );
+                postAction( Path.GetFileName( postPath ), metadata );
             }
         }
     }
