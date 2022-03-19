@@ -1,10 +1,13 @@
 string target = Argument( "target", "taste" );
+string testResultOutput = Argument( "test_result_dir", "_TestResults" );
 
 const string pretzelExe = "./_pretzel/src/Pretzel/bin/Debug/netcoreapp3.1/Pretzel.dll";
 const string pluginDir = "./_plugins";
 const string categoryPlugin = "./_plugins/Pretzel.Categories.dll";
 const string extensionPlugin = "./_plugins/Pretzel.SethExtensions.dll";
 const string sitePlugin = "./_plugins/SitePlugin.dll";
+
+DirectoryPath siteDir = Directory( "_site" );
 
 // ---------------- Tasks ----------------
 
@@ -21,8 +24,8 @@ Task( "generate" )
 .Does(
     () =>
     {
-        EnsureDirectoryExists( "_site" );
-        CleanDirectory( "_site" );
+        EnsureDirectoryExists( siteDir );
+        CleanDirectory( siteDir );
         RunPretzel( "bake", true );
     }
 ).Description( "Builds the site for publishing." );
@@ -43,13 +46,40 @@ Task( "build_plugin" )
     }
 ).Description( "Builds the site-specific plugin" );
 
+var runTestTask = Task( "run_tests" )
+.Does(
+    () =>
+    {
+        DirectoryPath testResultDir = Directory( testResultOutput );
+        EnsureDirectoryExists( testResultDir );
+        CleanDirectory( testResultDir );
+
+        var settings = new DotNetTestSettings
+        {
+            NoBuild = false,
+            NoRestore = false,
+            Configuration = "Debug",
+            ResultsDirectory = testResultDir,
+            VSTestReportPath = testResultDir.CombineWithFilePath( "SiteTestResults.xml" ),
+            Verbosity = DotNetVerbosity.Normal
+        };
+
+        DotNetTest( "_siteplugin/SiteTests/SiteTests.csproj", settings );
+    }
+).Description( "Runs all Tests" );
+
+if( DirectoryExists( siteDir ) == false )
+{
+    runTestTask.IsDependentOn( "generate" );
+}
+
 void BuildPlugin()
 {
     CheckPretzelDependency();
 
     Information( "Building Plugin..." );
 
-    var  settings = new DotNetPublishSettings
+    var settings = new DotNetPublishSettings
     {
         Configuration = "Debug",
         NoBuild = false,
@@ -57,7 +87,7 @@ void BuildPlugin()
         PublishTrimmed = true
     };
 
-    DotNetPublish( "./_siteplugin/SitePlugin.sln", settings );
+    DotNetPublish( "./_siteplugin/SitePlugin/SitePlugin.csproj", settings );
 
     EnsureDirectoryExists( pluginDir );
     FilePathCollection files = GetFiles( "./_siteplugin/SitePlugin/bin/Debug/netstandard2.1/publish/SitePlugin.*" );
