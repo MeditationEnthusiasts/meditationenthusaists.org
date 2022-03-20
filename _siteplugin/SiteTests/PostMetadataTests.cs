@@ -85,6 +85,7 @@ namespace SiteTests
 
         private void PerformActionOnPost( Action<string, IDictionary<string, object>> postAction )
         {
+            // Probably shouldn't do Parallel, since one test assumes things are done serially.
             foreach( string postPath in Directory.GetFiles( TestContants.PostsDirectory ) )
             {
                 string fileContent = File.ReadAllText( postPath );
