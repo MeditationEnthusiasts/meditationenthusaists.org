@@ -14,7 +14,7 @@ Learning meditation is not hard, a simple Google or Bing search can give you ple
 nty of techniques. Even clicking the "[Meditation Techniques](/category/about-meditation/meditation-techniques)" category on this page can give you techniques. However, many people
  say that they can't practice meditation because "its too hard." So is it hard?
 
- <!--more-->
+<!--more-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q0XIhBQoBqI" frameborder="0" allowfullscreen></iframe> 
 

@@ -16,6 +16,8 @@ First, we need to understand what causes lightheadedness. According to Wikipedia
 
 So why would meditation cause this? When we meditate, our pulse and breathing rate slow down. Sometimes, however, we make purposely slow down our breath before our body is ready for this low breathing rate. This could, in theory, cause lightheadedness while meditating. So what can be done about this?
 
+<!--more-->
+
 Let your body breath naturally. Do not try to control the breath. Let your body inhale and exhale naturally. No force is necessary. Your breath will slow down on its own; there is no need to slow it down manually. If you do slow it down manually, it could cause this lightheadedness.
 
 Interestingly, the forum user altered their breathing to a more natural rhythm, and had a successful meditation session with no lightheadedness.
