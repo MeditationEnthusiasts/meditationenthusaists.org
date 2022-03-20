@@ -20,7 +20,7 @@ If you need to de-stress during the day, but you can't figure out a good spot to
 
 <!--more-->
 
-In your office while on break, in school during a break, in a car (not while you are driving), on a train, in a plane, any where where you can close your eyes for a few minutes, and focus on your breath or mantra. Remember, you can meditate in any [position](/posts/about-meditation/meditation-postures) that is comfortable, you do not have to sit cross-legged!
+In your office while on break, in school during a break, in a car (not while you are driving), on a train, in a plane, any where where you can close your eyes for a few minutes, and focus on your breath or mantra. Remember, you can meditate in any [position](/posts/about-meditation/meditation-tips/meditation-postures/) that is comfortable, you do not have to sit cross-legged!
 
 So if you want to meditate, do not let location stop you (assuming its safe, and legal). As long as you are comfortable meditating there, you can meditate at that location. You can even have other people join you!
 

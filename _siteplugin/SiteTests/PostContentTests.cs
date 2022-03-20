@@ -19,8 +19,12 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using CommonMark;
+using HtmlAgilityPack;
 using NUnit.Framework;
 using Pretzel.Logic.Extensions;
 
@@ -35,8 +39,6 @@ namespace SiteTests
         public void MoreExistsTest()
         {
             // Setup
-            var foundIds = new Dictionary<int, string>();
-
             var moreRegex = new Regex(
                 @"[\r\n]+\<!--more--\>[\r\n]+",
                 RegexOptions.Compiled | RegexOptions.ExplicitCapture
@@ -54,16 +56,110 @@ namespace SiteTests
             );
         }
 
+        [Test]
+        public void SiteLinksDont404Test()
+        {
+            // Setup
+            Assert.IsTrue( Directory.Exists( TestContants.SiteOutput ), "Site must be created before running this test." );
+
+            // Act / Check
+            PerformActionOnPost(
+                ( postPath, postContents ) =>
+                {
+                    var aNodes = new List<HtmlNode>();
+                    var imgNodes = new List<HtmlNode>();
+
+                    string html = CommonMarkConverter.Convert( postContents );
+
+                    var htmlDoc = new HtmlDocument();
+                    htmlDoc.LoadHtml( html );
+
+                    var htmlNodeStack = new Stack<HtmlNode>();
+                    htmlNodeStack.Push( htmlDoc.DocumentNode );
+
+                    while( htmlNodeStack.Count != 0 )
+                    {
+                        HtmlNode currentNode = htmlNodeStack.Pop();
+                        foreach( HtmlNode childNode in currentNode.ChildNodes )
+                        {
+                            htmlNodeStack.Push( childNode );
+                        }
+
+                        if( currentNode.Name == "a" )
+                        {
+                            foreach( HtmlAttribute attribute in currentNode.Attributes )
+                            {
+                                if( attribute.Name == "href" )
+                                {
+                                    string attributeValue = attribute.Value;
+                                    if( attribute.Value.StartsWith( '/' ) == false )
+                                    {
+                                        // Its an external URL we have no control over.
+                                        continue;
+                                    }
+
+                                    attributeValue = attributeValue.TrimStart( '/' );
+                                    attributeValue = attributeValue.Replace( '/', Path.DirectorySeparatorChar );
+
+                                    string expectedPath = Path.Combine( TestContants.SiteOutput, attributeValue );
+                                    if( expectedPath.EndsWith( ".png" ) || expectedPath.EndsWith( ".jpg" ) || expectedPath.EndsWith( ".gif" ) )
+                                    {
+                                        // Do nothing.
+                                    }
+                                    else if( expectedPath.EndsWith( ".html" ) == false )
+                                    {
+                                        expectedPath = Path.Combine( expectedPath, "index.html" );
+                                    }
+
+                                    Assert.IsTrue(
+                                        File.Exists( expectedPath ),
+                                        $"{postPath} contains a URL that does not map to a file that exists: {expectedPath}"
+                                    );
+                                }
+                            }
+                        }
+                        else if( currentNode.Name == "img" )
+                        {
+                            foreach( HtmlAttribute attribute in currentNode.Attributes )
+                            {
+                                if( attribute.Name == "src" )
+                                {
+                                    string attributeValue = attribute.Value;
+                                    if( attribute.Value.StartsWith( '/' ) == false )
+                                    {
+                                        // Its an external URL we have no control over.
+                                        continue;
+                                    }
+                                    attributeValue = attributeValue.TrimStart( '/' );
+                                    attributeValue = attributeValue.Replace( '/', Path.DirectorySeparatorChar );
+
+                                    string expectedPath = Path.Combine( TestContants.SiteOutput, attributeValue );
+
+                                    Assert.IsTrue(
+                                        File.Exists( expectedPath ),
+                                        $"{postPath} contains a image that does not map to a file that exists: {expectedPath}"
+                                    );
+                                }
+                            }
+                        }
+                    }
+                }
+            );
+        }
+
         // ---------------- Test Helpers -----------------
 
         private void PerformActionOnPost( Action<string, string> postAction )
         {
-            foreach( string postPath in Directory.GetFiles( TestContants.PostsDirectory ) )
-            {
-                string fileContent = File.ReadAllText( postPath );
+            Parallel.ForEach(
+                Directory.GetFiles( TestContants.PostsDirectory ),
+                ( postPath ) =>
+                {
+                    string fileContent = File.ReadAllText( postPath );
 
-                postAction( Path.GetFileName( postPath ), fileContent.ExcludeHeader() );
-            }
+                    postAction( Path.GetFileName( postPath ), fileContent.ExcludeHeader() );
+                }
+            );
         }
     }
 }

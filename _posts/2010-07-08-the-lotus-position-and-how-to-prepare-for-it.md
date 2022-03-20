@@ -27,7 +27,7 @@ Even if you are comfortable with sitting in the lotus position now, you should t
 
 Also, if you meditate in any cross-legged position, it couldn't hurt to check out the page either. This way the position, no matter how difficult it is, will be easier to sit in.
 
-The only last bit of advice I can offer is this: Getting into the lotus position will not be overnight for most people. Take it slow, and do not expect immediate results, or you will be disappointed. It is not a race, and there are plenty of [other positions](/posts/about-meditation/meditation-postures) to meditate in.
+The only last bit of advice I can offer is this: Getting into the lotus position will not be overnight for most people. Take it slow, and do not expect immediate results, or you will be disappointed. It is not a race, and there are plenty of [other positions](/posts/about-meditation/meditation-tips/meditation-postures/) to meditate in.
 
 I think I will have the author of the site have the last word:
 

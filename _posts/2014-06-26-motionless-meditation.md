@@ -12,6 +12,7 @@ tags: [body, determination, howto, meditation, motionless, move, psipog, sitting
 ---
 
 ### Introduction
+
 In my middle school days, I used to hang out on a Forum called PsiPog.net.  For those of you who are unaware of it, it was a site that focused on Parapsychology; that is stuff like telekinesis, remote viewing, psi balls, astral travel, etc.  Although I have since stopped believing in stuff like telekinesis, PsiPog was instrumental in getting me started down the meditation path.  This meditation technique was one of the first ones I tried.  The technique was created by PsiPog forum user MartialArtist.
 
 <!--more-->
@@ -23,7 +24,7 @@ In my middle school days, I used to hang out on a Forum called PsiPog.net.  For
 The technique is very simple.
 
 * Set a timer for a predetermined time.  For beginners, 10-20 minutes will suffice.
-* Get into a comfortable [position](/posts/about-meditation/meditation-postures); one that can be maintained easily.
+* Get into a comfortable [position](/posts/about-meditation/meditation-tips/meditation-postures/); one that can be maintained easily.
 * Sit in meditation, and DO NOT MOVE YOUR BODY AT ALL until the timer goes off.
 * If a desire to move your body comes along, take note of it, and let it go.
 

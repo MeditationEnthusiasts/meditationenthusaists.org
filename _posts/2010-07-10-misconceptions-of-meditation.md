@@ -20,7 +20,7 @@ There are a lot of misconceptions floating around about Meditation. So let's cla
 
 No! This is incorrect. In order for you mind to relax, your body must also relax. It is near impossible for your body to relax if it is uncomfortable. You can meditate in any position, pose, etc. that is comfortable. You can even lie down if you need to (just be careful of falling asleep). You can even do walking or standing meditation! So no, you do not have to sit in a position that is uncomfortable. _Always be comfortable in meditation!_
 
-You can find more info on some sample meditation positions [here](/about-meditation/meditation-postures/).
+You can find more info on some sample meditation positions [here](/posts/about-meditation/meditation-tips/meditation-postures/).
 
 ### Meditation is just conscious sleep
 

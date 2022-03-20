@@ -11,7 +11,7 @@ featured_image: /static/img/featured/thebreath.png
 tags: [anapanasati, breath, focus, howto, meditating, meditation, technique]
 ---
 
-You got yourself into a comfortable [position for meditation](/posts/about-meditation/meditation-postures), you close your eyes (or leave them half open). Now what? People who have never meditated before would probably think there's some complicated mind exercise that needs to be done, or they think you chant a mantra. Although you can chant a mantra if you want, it is not required. No, when you sit down to meditate, you only need to focus on the breath.
+You got yourself into a comfortable [position for meditation](/posts/about-meditation/meditation-tips/meditation-postures/), you close your eyes (or leave them half open). Now what? People who have never meditated before would probably think there's some complicated mind exercise that needs to be done, or they think you chant a mantra. Although you can chant a mantra if you want, it is not required. No, when you sit down to meditate, you only need to focus on the breath.
 
 That's it.
 

@@ -19,7 +19,7 @@ In Kundalini Yoga, there is an exercise known as "Kirtan Kriya".  This is also 
 
 This meditation is a tad different from the [techniques](/category/about-meditation/meditation-techniques/) on this site.  The other techniques, for the most part, have you sitting still in silence while you meditate.  In this technique, you chant out loud during the majority of it, and move you fingers.
 
-To begin this meditation, [sit comfortably](/about-meditation/meditation-postures/) and put your hands in what is called gyan mudra.  This is where you rest your hands on your knees and have the thumb and index finger touch.  Close your eyes, and have your eyes focus to the center of your forehead.
+To begin this meditation, [sit comfortably](/posts/about-meditation/meditation-tips/meditation-postures/) and put your hands in what is called gyan mudra.  This is where you rest your hands on your knees and have the thumb and index finger touch.  Close your eyes, and have your eyes focus to the center of your forehead.
 
 Next, take in a deep breath, and on the exhale, chant "Saaa Taaa Naaa Maaa".  When you chant "Saaa", touch only your index fingers and thumb stogether.  When you chant "Taaa", touch only your middle fingers and thumbs together.  When you chant "Naaa", touch only your ring fingers and thumbs together.  Lastly, when you chant "Maaa", touch only your pinky fingers and thumbs together.  Inhale, and repeat the cycle over again.
 

@@ -24,7 +24,7 @@ Although these are common mantras, mantras, can be anything you want them to be;
 
 <!--more-->
 
-Mantra meditation is simple (as are most meditation techniques). Get into a comfortable [position](/posts/about-meditation/meditation-postures), relax your body, and then repeat your mantra.
+Mantra meditation is simple (as are most meditation techniques). Get into a comfortable [position](/posts/about-meditation/meditation-tips/meditation-postures/), relax your body, and then repeat your mantra.
 
 There are several ways you can repeat your mantra.
 
