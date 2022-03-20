@@ -8,7 +8,7 @@ subcategory: "Meditation Tips"
 description: "A noisy environment can throw off your zen, here's how to get it back."
 wpid: 109
 featured_image: /static/img/featured/noise.png
-tags: [breath, contort, easy, eyes, hard, meditation, misconceptions, mythbusting, religion, video, YouTube]
+tags: [annoying, apartment, city, environment, family, help, home, meditation, noise, noisy, outside, park, pets, sound, tips]
 ---
 
 The ideal place for meditation is a nice, secluded place, that is quiet, has no immediate distractions, and is peaceful. Although some people may have access to places such as these, most of us live in cities, or with noisy families, or noisy neighbors. Although experienced meditators can usually ignore the sounds, new meditators could potentially get frustrated and distracted by the noise. Being frustrated with something while starting out is NEVER a good thing. First impressions are important after all! So what can be done? Read on! Most meditators have probably been in this situation: When they are just starting out to meditate, it is usually in their home, during the day, with 3 other family members running around the home making all sorts of noise. One of the first things you notice while meditating is just how much noise there is in a home; noise you would never have noticed while you weren't in meditation. So what can you do to ignore this noise? Try the following tips:
