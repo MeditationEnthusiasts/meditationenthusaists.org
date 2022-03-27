@@ -12,6 +12,8 @@ tags: [anger, bliss, bored, dream, expect, experience, happy, meditation, mind, 
 
 You want to start meditation, but are unsure what to expect from it. The truth is, everyone experiences meditation differently. Your experience will differ from someone else. So what can you experience? Read on.
 
+<!--more-->
+
 ### Pain/discomfort
 
 "Pain first?" you may ask yourself, "are you trying to scare me?" No, just being honest. Physical pain or discomfort is one of the first things a new meditator can experience, especially if it's the first time he or she sits cross-legged. If you experience discomfort, consider changing [positions](/posts/about-meditation/meditation-tips/meditation-postures/), and continue meditating or try stretching before meditating. If you experience actual pain; stop before you hurt something. With practice, along with some yoga poses, the discomfort should go down.

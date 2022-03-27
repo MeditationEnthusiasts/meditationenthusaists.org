@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The "Right Way" to Meditate"
+title: 'The "Right Way" to Meditate'
 author: Seth
 comments: true
 category: "About Meditation"
