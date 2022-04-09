@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Best Yoga pPse for Meditation"
+title: "The Best Yoga Ppse for Meditation"
 author: Seth
 comments: true
 category: "About Meditation"
