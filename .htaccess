@@ -11,6 +11,8 @@ layout: nil
 
 ErrorDocument 404 /404/
 
+Redirect 301 /feed/ /rss.xml
+
 # Redirect old wordpress URLs to new ones.
 @foreach( var page in Model.Site.Posts )
 {
