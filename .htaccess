@@ -9,6 +9,17 @@ layout: nil
 
 @Include( "htaccess.cstxt", Model, typeof( PageContext ) )
 
+# Redirect home page p query strings.
+@foreach( var page in Model.Site.Posts )
+{
+    if( page.Bag.ContainsKey( "wpid" ) )
+    {
+@:RewriteCond %{REQUEST_URI} ^/$
+@:RewriteCond %{QUERY_STRING} ^p=@(page.Bag["wpid"])
+@:RewriteRule ^(.*)$ https://%{HTTP_HOST}@(page.Url) [R=301,L]
+    }
+}
+
 ErrorDocument 404 /404/
 
 Redirect 301 /feed/ /rss.xml
