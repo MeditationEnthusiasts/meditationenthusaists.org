@@ -6,6 +6,11 @@ layout: layout
 
 @{
     var categories = Model.Site.GetCategoryPages();
+
+    const int numberPosts = 5;
+    var recentPosts = Model.Site.Posts.OrderByDescending(
+        p => p.Date
+    ).Take( numberPosts ).ToArray();
 }
 
 <div class="row">
@@ -34,6 +39,42 @@ layout: layout
                                     }
                                 </ul>
                             }
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="aside-widget">
+            <header>
+                <h3>Pages</h3>
+            </header>
+            <div class="body">
+                <ul class="clean-list">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="/posts/">Posts</a>
+                    </li>
+                    <li>
+                        <a href="/donate/">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="aside-widget">
+            <header>
+                <h3>Recent Posts</h3>
+            </header>
+            <div class="body">
+                <ul class="clean-list">
+                    @foreach( var post in recentPosts )
+                    {
+                        <li>
+                            <a href="@post.Url">@post.Title</a>
                         </li>
                     }
                 </ul>
