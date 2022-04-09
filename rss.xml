@@ -1,5 +1,41 @@
 ---
 layout: nil
 ---
-@using Pretzel.Logic.Templating.Context
-@Include( "rss.csxml", Model, typeof( PageContext ) )
+@using Pretzel.SethExtensions;
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>@Model.Site.Title</title>
+    <link>@Model.Site.Config["url"]</link>
+    <atom:link href="@Model.Site.Config["url"]/rss.xml" rel="self" type="application/rss+xml" />
+    <description>@Model.Site.Config["description"]</description>
+    <language>en-us</language>
+    <pubDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</pubDate>
+    <lastBuildDate>@Model.Site.Time.ToString("ddd, dd MMM yyyy H:mm:ss K")</lastBuildDate>
+    @foreach(var post in Model.Site.Posts)
+    {
+        <item>
+            <title>@post.Title</title>
+            @Raw("<link>")@Model.Site.Config["url"]@(post.Url.TrimStart('/'))@Raw("</link>")@* Workaround: RazorEngine is a HTML5 template engine, where link is a void element *@
+            @if( post.Bag.ContainsKey( "comments" ) && ( post.Bag["comments"].ToString().ToLower() == "true" ) )
+            {
+                <comments>@Model.Site.Config["url"]@(post.Url.TrimStart('/'))#comments</comments>
+            }
+            <pubDate>@post.Date.ToString("ddd, dd MMM yyyy H:mm:ss K")</pubDate>
+            <author>@post.GetAuthor()</author>
+            @if( post.Bag.ContainsKey( "wpid" ) )
+            {
+                <guid isPermaLink="false">@Model.Site.Config["url"]?p=@(post.Bag["wpid"])</guid>
+            }
+            else
+            {
+                <guid isPermaLink="true">@Model.Site.Config["url"]@(post.Url.TrimStart('/'))</guid>
+            }
+            <description>@post.Content</description>
+        </item>
+    }
+
+  </channel> 
+</rss>
+
