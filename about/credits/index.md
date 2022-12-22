@@ -21,3 +21,4 @@ CSS Theme
 * Terms of Service: [https://binarytheme.com/terms-of-service/](https://binarytheme.com/terms-of-service/)
 
 @Include( "credits.md", Model, typeof( PageContext ) )
+@Include( "actpub_credits.md", Model, typeof( PageContext ) )

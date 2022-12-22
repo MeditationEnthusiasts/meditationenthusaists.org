@@ -19,6 +19,20 @@ website_version: "6.0.0"
 disqus_shortname: meditationenthusiasts-org
 enable_subcategories: true
 
+# ActivtyPub:
+actpub_directory: "activitypub"
+actpub_outbox: true
+actpub_inbox: true
+actpub_profileurl: posts
+actpub_username: posts
+actpub_icon: "https://www.meditationenthusiasts.org/static/img/logo.jpg"
+actpub_created: "2010-07-07T00:00:00.0000000Z"
+actpub_summary: "I post whenever there's a new post on Meditation Enthusiasts, a site about Meditation!"
+actpub_publickeyfile: "activitypub/public.pem"
+actpub_following:
+ - "https://www.roclongboarding.info/activitypub/profile.json"
+ - "https://tech.lgbt/users/xforever1313"
+
 exclude:
  - .gitignore
  - .git
